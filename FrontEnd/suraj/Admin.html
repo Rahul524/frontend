@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+    <input type="checkbox" id="check">
+    <!--header area start-->
+    <header>
+      <label for="check">
+        <i class="fas fa-bars" id="sidebar_btn"></i>
+      </label>
+      <div class="parent">
+      <div class="left_area">
+        <h3>Welcome <span>Admin</span></h3>
+      </div>
+	  <!--<ul>
+	    <li><a href="#" class="Home">Home</a></li>
+	    <li><a href="#" class="Contact">Contact</a></li>
+	    <li><a href="#" class="About">About</a></li>
+	    <li><a href="#" class="chatbot">Chatbot</a></li>
+	    <li><a href="#" class="calendar">Calendar</a></li>
+      <li><a href="#" class="logout_btn">Logout</a></li>
+	  </ul>
+      -->
+      <div class="left_area">
+      <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#about">Logout</a></li>
+      </ul>
+      </div>
+      </div>
+
+
+    </header>
+    <!--header area end-->
+    <!--mobile navigation bar start-->
+    <div class="mobile_nav">
+      <div class="nav_bar">
+        <img src="1.png" class="mobile_profile_image" alt="">
+        <i class="fa fa-bars nav_btn"></i>
+      </div>
+      <div class="mobile_nav_items">
+	    <a href="#"><i class="fas fa-money-check"></i><span>Payment</span></a>
+        <a href="#"><i class="fas fa-chart-line"></i><span>Performance</span></a>
+        <a href="#"><i class="fas fa-award"></i><span>Exam</span></a>
+		<a href="#"><i class="fas fa-file-upload"></i><span>View Uploads</span></a>
+      </div>
+    </div>
+    <!--mobile navigation bar end-->
+    <!--sidebar start-->
+    <div class="sidebar">
+      <div class="profile_info">
+        <img src="1.png" class="profile_image" alt="">
+        <h4>Admin</h4>
+      </div>
+	  <a href="#"><i class="fas fa-money-check"></i><span>Payment</span></a>
+      <a href="#"><i class="fas fa-chart-line"></i><span>Performance</span></a>
+      <a href="#"><i class="fas fa-award"></i><span>Exam</span></a>
+	  <a href="#"><i class="fas fa-file-upload"></i><span>view Uploads</span></a>	  
+    </div>
+    <!--sidebar end-->
+
+    <div class="content">
+    </div>
+		
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.nav_btn').click(function(){
+        $('.mobile_nav_items').toggleClass('active');
+      });
+    });
+    </script>
+
+  </body>
+</html>

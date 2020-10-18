@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+    <input type="checkbox" id="check">
+    <!--header area start-->
+    <header>
+      <label for="check">
+        <i class="fas fa-bars" id="sidebar_btn"></i>
+      </label>
+      <div class="parent">
+      <div class="left_area">
+        <h3>Welcome <span>Parent</span></h3>
+      </div>
+	  <!--<ul>
+	    <li><a href="#" class="Home">Home</a></li>
+	    <li><a href="#" class="Contact">Contact</a></li>
+	    <li><a href="#" class="About">About</a></li>
+	    <li><a href="#" class="chatbot">Chatbot</a></li>
+	    <li><a href="#" class="calendar">Calendar</a></li>
+      <li><a href="#" class="logout_btn">Logout</a></li>
+	  </ul>
+      -->
+      <div class="left_area">
+      <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#about">Logout</a></li>
+      </ul>
+      </div>
+      </div>
+
+
+    </header>
+    <!--header area end-->
+    <!--mobile navigation bar start-->
+    <div class="mobile_nav">
+      <div class="nav_bar">
+        <img src="1.png" class="mobile_profile_image" alt="">
+        <i class="fa fa-bars nav_btn"></i>
+      </div>
+      <div class="mobile_nav_items">
+        <a href="#"><i class="fas fa-chart-line"></i><span>Performance</span></a>
+        <a href="#"><i class="fas fa-user-friends"></i><span>PTA</span></a>
+		<a href="#"><i class="fas fa-money-check"></i><span>Payment</span></a>
+      </div>
+    </div>
+    <!--mobile navigation bar end-->
+    <!--sidebar start-->
+    <div class="sidebar">
+      <div class="profile_info">
+        <img src="1.png" class="profile_image" alt="">
+        <h4>Parent</h4>
+      </div>
+      <a href="#"><i class="fas fa-chart-line"></i><span>Performance</span></a>
+      <a href="#"><i class="fas fa-user-friends"></i><span>PTA</span></a>
+	  <a href><i class="fas fa-money-check"></i><span>Payment</span></a>	  
+    </div>
+    <!--sidebar end-->
+
+    <div class="content">
+    </div>
+
+    <ul class="social-media-container">
+      <li class="social-media blog">
+        <i class="fas fa-laptop-code"></i>
+        <a href="https://www.nomura.com/india/careers/" target="_blank">
+          Update
+        </a>
+      </li>
+      <li class="social-media twitter">
+        <i class="fab fa-twitter"></i>
+        <a href="https://twitter.com/Nomura?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+          Follow us on Twitter
+        </a>
+      </li>
+      <li class="social-media linkedin">
+        <i class="fab fa-linkedin-in"></i>
+        <a href="https://www.linkedin.com/company/nomura/" target="_blank">
+          Connect with us on Linkedin
+        </a>
+      </li>
+      <li class="social-media facebook">
+        <i class="fab fa-facebook-f"></i>
+        <a href="https://nomurapodcasts.libsyn.com/fireside-chats-cross-asset-desk-strategy-a-market-focused-on-the-upside?fbclid=IwAR0zSMHwx3lU1GnI2X_Tsfz0DIlOjon2CBerbeL1RY-bqcLVAURBIptAL8U" target="_blank">
+          Like our Facebook page
+        </a>
+      </li>
+   </ul>
+    
+		
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.nav_btn').click(function(){
+        $('.mobile_nav_items').toggleClass('active');
+      });
+    });
+    </script>
+
+  </body>
+</html>

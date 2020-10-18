@@ -1,0 +1,151 @@
+body {
+  background-color: #2F3242;
+}
+svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -400px;
+}
+.message-box {
+  height: 200px;
+  width: 380px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: 50px;
+  color: #FFF;
+  font-family: Roboto;
+  font-weight: 300;
+}
+.message-box h1 {
+  font-size: 60px;
+  line-height: 46px;
+  margin-bottom: 40px;
+}
+.buttons-con .action-link-wrap {
+  margin-top: 40px;
+}
+.buttons-con .action-link-wrap a {
+  background: #68c950;
+  padding: 8px 25px;
+  border-radius: 4px;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  text-decoration: none;
+  margin-right: 10px
+}
+.buttons-con .action-link-wrap a:hover {
+  background: #5A5C6C;
+  color: #fff;
+}
+
+#Polygon-1 , #Polygon-2 , #Polygon-3 , #Polygon-4 , #Polygon-4, #Polygon-5 {
+  animation: float 1s infinite ease-in-out alternate;
+}
+#Polygon-2 {
+  animation-delay: .2s; 
+}
+#Polygon-3 {
+  animation-delay: .4s; 
+}
+#Polygon-4 {
+  animation-delay: .6s; 
+}
+#Polygon-5 {
+  animation-delay: .8s; 
+}
+
+@keyframes float {
+	100% {
+    transform: translateY(20px);
+  }
+}
+
+
+header{
+  z-index: 1;
+  position: fixed;
+  background: #22242A;
+  padding: 20px;
+  width: calc(100% - 0%);
+  top: 0;
+  height: 30px;
+}
+
+ul {
+  width : 40%;  
+  float: right;
+  list-style-type: none;
+  margin: 0;
+  padding:0;
+  padding-bottom: 0px;
+ 
+}
+
+.parent {
+  width: 100%;
+}
+li a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 15px;
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
+  transition: 0.5s;
+  transition-property: background;
+  border-radius: 2px;
+}
+li {
+  text-transform: uppercase; 
+  display: inline;
+  padding:3%;
+}
+li a:hover {
+  background: #0B87A6;
+}
+
+.left_area ul{
+  padding-top: 0.5%;
+
+}
+
+.left_area h3{
+  float: left;
+  color: #fff;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 900;
+  width: 50%;
+}
+
+.left_area span{
+  color: #19B3D3;
+}
+
+
+
+@media (max-width: 991px) {
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -190px;
+  }
+  .message-box {
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -190px;
+    text-align: center;
+  }
+}
